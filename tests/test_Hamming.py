@@ -7,8 +7,8 @@ import unittest
 
 from click.testing import CliRunner
 
-from template import cli
-from template.Hamming import hamming
+from hamming import cli
+from hamming.Hamming import hamming
 
 
 class TestCase(unittest.TestCase):

@@ -1,4 +1,4 @@
-"""Console script for template."""
+"""Console script for hamming."""
 
 import click
 
@@ -8,7 +8,7 @@ def main():
     """Main entrypoint."""
     click.echo("python-Hamming-package")
     click.echo("=" * len("python-Hamming-package"))
-    click.echo("Python package template with MPI Evolutionary Biology branding.")
+    click.echo("Python package hamming with MPI Evolutionary Biology branding.")
 
 
 if __name__ == "__main__":

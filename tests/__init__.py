@@ -1,1 +1,1 @@
-"""Unit test package for python-template-package."""
+"""Unit test package for python-hamming-package."""
