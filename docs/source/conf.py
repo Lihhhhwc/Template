@@ -9,7 +9,7 @@
 project = 'Python Template Package'
 copyright = '2024, Max Planck Institute for Evolutionary Biology'
 author = 'Max Planck'
-version = "version = "version = "version = "version = "0.0.0"""""
+version = "version = "version = "version = "version = "0.0.1"""""
 
 import sys
 
