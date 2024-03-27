@@ -88,21 +88,21 @@ class TestCase(unittest.TestCase):
         ### absence one sequence
         seq1 = "ATCG"
         seq2 = None
-        ham = hamming(seq1, seq2, case = 0)
+        ham = hamming(seq1, seq2, case=0)
         expected = None
         self.assertEqual(ham, expected)
-        
+
         ### no string
         seq1 = 23
         seq2 = "ATTA"
-        ham = hamming(seq1, seq2, case = 0)
+        ham = hamming(seq1, seq2, case=0)
         expected = None
         self.assertEqual(ham, expected)
 
         ### length
         seq1 = "ACT"
         seq2 = "ATTA"
-        ham = hamming(seq1, seq2, case = 0)
+        ham = hamming(seq1, seq2, case=0)
         expected = None
         self.assertEqual(ham, expected)
 
@@ -125,7 +125,7 @@ class TestCase(unittest.TestCase):
         ### ham
         seq1 = "ACTGC"
         seq2 = "ATTAC"
-        greet = hamming(seq1, seq2, case = 0)
+        ham = hamming(seq1, seq2, case=0)
         expected = 2
         self.assertEqual(ham, expected)
 

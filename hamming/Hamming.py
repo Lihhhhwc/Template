@@ -19,17 +19,23 @@ def hamming(seq1, seq2, case=0):
     """
 
     if seq1 is None or seq2 is None:
-        print("One or both input sequences missing: Cannot calculate Hamming distance")
+        print(
+            "One or both input sequences missing: Cannot calculate Hamming distance"
+        )
         return None
 
     elif not isinstance(seq1, str) or not isinstance(seq2, str):
-        print("One or both input sequences is not a string: Cannot calculate Hamming distance")
+        print(
+            "One or both input sequences is not a string: Cannot calculate Hamming distance"
+        )
         return None
 
     elif len(seq1) != len(seq2):
-        print("Othe given sequences are not of the same length: Cannot calculate Hamming distance")
-        return None    
-    elif case !=0 and case !=1:
+        print(
+            "Othe given sequences are not of the same length: Cannot calculate Hamming distance"
+        )
+        return None
+    elif case != 0 and case != 1:
         print("case argument is not 0 or 1: Cannot calculate Hamming distance")
         return None
 

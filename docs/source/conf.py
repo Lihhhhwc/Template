@@ -9,7 +9,7 @@
 project = 'Python Hamming Package'
 copyright = '2024, Max Planck Institute for Evolutionary Biology'
 author = 'Max Planck'
-version = "version = "version = "version = "version = "0.0.1"""""
+version = "0.0.1"
 
 import sys
 
@@ -20,11 +20,12 @@ import hamming
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc',
-              'sphinx_rtd_theme',
-              'myst_parser',
-              'sphinx.ext.napoleon',
-              ]
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx_rtd_theme',
+    'myst_parser',
+    'sphinx.ext.napoleon',
+]
 
 hammings_path = ['_hammings']
 exclude_patterns = []
