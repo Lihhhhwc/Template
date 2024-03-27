@@ -1,4 +1,4 @@
-sources = template
+sources = hamming
 
 .PHONY: test format lint unittest coverage pre-commit clean
 test: format lint unittest
