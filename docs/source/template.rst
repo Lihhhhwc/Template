@@ -1,7 +1,7 @@
 ----------------
-template package
+hamming package
 ----------------
 
-.. automodule:: template
+.. automodule:: hamming
    :members:
 
