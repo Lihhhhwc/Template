@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "python-template-package"
-version = "version = "version = "version = "version = "0.0.1"""""
+version = "0.0.1"
 homepage = "https://github.com/mpievolbio-scicomp/python-template-package"
 description = "Python package template with MPI Evolutionary Biology branding.."
 authors = ["Max Planck Institute for Evolutionary Biology - Scientific Computing Services <computing@evolbio.mpg.de>"]

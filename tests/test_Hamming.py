@@ -7,8 +7,8 @@ import unittest
 
 from click.testing import CliRunner
 
-from Hamming import cli
-from Hamming.hamming import greeting
+from template import cli
+from template.Hamming import hamming
 
 
 class TestCase(unittest.TestCase):
@@ -82,17 +82,43 @@ class TestCase(unittest.TestCase):
         self.assertEqual(help_result.exit_code, 0)
         self.assertIn('--help  Show this message and exit.', help_result.output)
 
-    def test_greeting(self):
+    def test_Hamming(self):
         """Test the greeting function."""
 
-        mood = "sad"
+        ### absence one sequence
+        seq1 = "ATCG"
+        seq2 = None
+        ham = hamming(seq1, seq2, case = 0)
+        expected = None
+        self.assertEqual(ham, expected)
+        
+        ### no string
+        seq1 = 23
+        seq2 = "ATTA"
+        ham = hamming(seq1, seq2, case = 0)
+        expected = None
+        self.assertEqual(ham, expected)
 
-        greet = greeting(mood)
-        expected = "How are you? I'm sad."
+        ### length
+        seq1 = "ACT"
+        seq2 = "ATTA"
+        ham = hamming(seq1, seq2, case = 0)
+        expected = None
+        self.assertEqual(ham, expected)
 
-        self.assertEqual(greet, expected)
+        ### case = 1
+        seq1 = "ACTa"
+        seq2 = "ATTA"       
+        ham = hamming(seq1, seq2, case = 1)
+        expected = 1
+        self.assertEqual(ham, expected)
 
-        ### TODO: Add other moods.
+        ### ham
+        seq1 = "ACTGC"
+        seq2 = "ATTAC"
+        greet = hamming(seq1, seq2, case = 0)
+        expected = 2
+        self.assertEqual(ham, expected)
 
 
 if __name__ == "__main__":
