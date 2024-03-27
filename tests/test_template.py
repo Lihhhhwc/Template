@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 """Tests for `template` package."""
 
-import unittest
 import os
-import sys
 import shutil
-import pytest
+import unittest
+
 from click.testing import CliRunner
 
 from template import cli
@@ -13,10 +12,10 @@ from template.template import greeting
 
 
 class TestCase(unittest.TestCase):
-    """ A test class holding example tests using unittest. """
+    """A test class holding example tests using unittest."""
 
     def setUp(self) -> None:
-        """ Set up the test case. """
+        """Set up the test case."""
 
         # List where files and directories to be deleted are marked.
         self._thrashcan = []
@@ -25,7 +24,7 @@ class TestCase(unittest.TestCase):
         self._constant = "ABCD"
 
     def tearDown(self) -> None:
-        """ Clean up after a test has finished."""
+        """Clean up after a test has finished."""
 
         del self._constant
 
@@ -36,7 +35,7 @@ class TestCase(unittest.TestCase):
                 shutil.rmtree(item)
 
     def test_reusing_constant(self):
-        """ A test that reuses the test class constant"""
+        """A test that reuses the test class constant"""
 
         self.assertEqual(self._constant, "ABCD")
 
@@ -49,7 +48,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(received, expected)
 
     def test_lists_equal(self):
-        """ Test that two lists are equal."""
+        """Test that two lists are equal."""
 
         received = ["ACTG"]
         expected = ["ACTG"]
@@ -57,7 +56,7 @@ class TestCase(unittest.TestCase):
         self.assertListEqual(received, expected)
 
     def test_fails(self):
-        """ Example for a failing test."""
+        """Example for a failing test."""
 
         received = False
 
@@ -65,7 +64,7 @@ class TestCase(unittest.TestCase):
 
     @unittest.skip("Give me a good reason for skipping!")
     def test_skipped_fails(self):
-        """ Example for a skipped failing test."""
+        """Example for a skipped failing test."""
 
         received = False
 
@@ -84,7 +83,7 @@ class TestCase(unittest.TestCase):
         self.assertIn('--help  Show this message and exit.', help_result.output)
 
     def test_greeting(self):
-        """ Test the greeting function."""
+        """Test the greeting function."""
 
         mood = "sad"
 
@@ -94,6 +93,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(greet, expected)
 
         ### TODO: Add other moods.
+
 
 if __name__ == "__main__":
     unittest.main()
