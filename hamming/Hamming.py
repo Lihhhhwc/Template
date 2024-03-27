@@ -28,9 +28,8 @@ def hamming(seq1, seq2, case=0):
 
     elif len(seq1) != len(seq2):
         print("Othe given sequences are not of the same length: Cannot calculate Hamming distance")
-        return None
-
-    elif case != 0 or case != 1:
+        return None    
+    elif case !=0 and case !=1:
         print("case argument is not 0 or 1: Cannot calculate Hamming distance")
         return None
 
