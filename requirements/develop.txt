@@ -1,0 +1,12 @@
+black
+build
+bump2version
+click
+codecov
+flake8
+isort
+mypy
+poetry
+pytest
+setuptools
+twine
