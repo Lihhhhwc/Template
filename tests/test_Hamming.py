@@ -7,8 +7,8 @@ import unittest
 
 from click.testing import CliRunner
 
-from template import cli
-from template.Hamming import hamming
+from hamming import cli
+from hamming.Hamming import hamming
 
 
 class TestCase(unittest.TestCase):
@@ -106,11 +106,20 @@ class TestCase(unittest.TestCase):
         expected = None
         self.assertEqual(ham, expected)
 
+        ### case = 2
+        seq1 = "ACTT"
+        seq2 = "ATTA"
+        case = 2
+        ham = hamming(seq1, seq2, case)
+        expected = None
+        self.assertEqual(ham, expected)
+
         ### case = 1
-        seq1 = "ACTa"
-        seq2 = "ATTA"       
-        ham = hamming(seq1, seq2, case = 1)
-        expected = 1
+        seq1 = "ACTTa"
+        seq2 = "ATTAA"
+        case = 1
+        ham = hamming(seq1, seq2, case)
+        expected = 2
         self.assertEqual(ham, expected)
 
         ### ham
