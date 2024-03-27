@@ -6,8 +6,8 @@ import click
 @click.command()
 def main():
     """Main entrypoint."""
-    click.echo("python-template-package")
-    click.echo("=" * len("python-template-package"))
+    click.echo("python-Hamming-package")
+    click.echo("=" * len("python-Hamming-package"))
     click.echo("Python package template with MPI Evolutionary Biology branding.")
 
 

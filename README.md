@@ -1,6 +1,6 @@
 
-# template_python_package
-This is a template project for a full fledged python package under the umbrella of MPI for Evolutionary Biology
+# hamming_python_package
+This is a hamming project for a full fledged python package under the umbrella of MPI for Evolutionary Biology
 
 # the ideas of functions
 - [ ] DNA Complement: A function that takes a DNA sequence as input and returns its complement (e.g., replacing A with T, C with G, and vice versa).

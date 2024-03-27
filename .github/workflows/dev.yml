@@ -37,9 +37,9 @@ jobs:
 
       - name: format
         run: |
-          flake8 template
-          black template tests
-          isort template
+          flake8 hamming
+          black hamming tests
+          isort hamming
 
       - name: tests
         run: |
