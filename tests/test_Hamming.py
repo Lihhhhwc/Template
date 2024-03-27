@@ -8,7 +8,7 @@ import unittest
 from click.testing import CliRunner
 
 from Hamming import cli
-from Hamming.Hamming import greeting
+from Hamming.hamming import greeting
 
 
 class TestCase(unittest.TestCase):
